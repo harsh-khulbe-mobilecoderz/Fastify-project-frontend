@@ -1,0 +1,32 @@
+/* Update ul and li styles */
+div {
+    display: inline-block;
+    background-color: lightblue;
+    margin-left:300px;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding:10px 60px;
+    border:1px solid black;
+  }
+
+  button {
+    margin-left: auto; 
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+

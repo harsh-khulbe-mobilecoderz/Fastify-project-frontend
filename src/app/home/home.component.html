@@ -1,0 +1,17 @@
+<button (click)="onLogout()">Logout</button>
+
+<div>
+    <ul *ngFor="let user of users; let i = index">
+        <li *ngIf="editIndex === i"><input type="text" [(ngModel)]="user.name"></li>
+        <li *ngIf="editIndex !== i"><span>{{ user.name }}</span></li>
+
+        <li *ngIf="editIndex === i"><input type="text" [(ngModel)]="user.email"></li>
+        <li *ngIf="editIndex !== i"><span>{{ user.email }}</span></li>
+
+        <li>
+            <button (click)="onEditUser(i)" *ngIf="editIndex !== i">Edit</button>
+            <button (click)="onSaveUser(i)" *ngIf="editIndex === i">Save</button>
+        </li>
+        <li><button (click)="onDeleteUser(i)">Delete</button></li>
+    </ul>
+</div>

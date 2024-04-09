@@ -1,0 +1,16 @@
+.btn {
+    padding:10px;
+    margin:20px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.login {
+    background-color: rgb(50, 111, 204);
+    color:white;
+}
+
+.register {
+    background-color: green;
+    color:whitesmoke;
+}
